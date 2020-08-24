@@ -11,7 +11,7 @@ Team challenge: **4**
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Noémie | Louis | - | Soufiane | Eugenie | 
 
-##Introduction
+## Introduction
 
 Ce projet à pour but de tester nos nouvelles connaissance en php et mysql ainsi que revoir les bases tels que bootstrap 4 ,CSS et Javascript.
 
@@ -19,7 +19,7 @@ le challenge consiste à creer une plateforme de streaming contenant des bandes 
 
 Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 
-##Languages Utilisés
+## Languages Utilisés
 
 *HTML5
 *CSS3
@@ -27,7 +27,7 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 *JS
 *Bootstrap4
 
-##Avancé du projet
+## Avancé du projet
 
 * 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée.
 *
@@ -37,4 +37,6 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 *
 *
 *
-##Screenshots de l'évolution du projet
+## Screenshots de l'évolution du projet
+
+![](assets/Figma.JPG)
