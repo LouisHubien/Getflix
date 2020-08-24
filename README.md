@@ -21,15 +21,15 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 
 ## Languages Utilisés
 
-*HTML5
-*CSS3
-*PHP,Mysql
-*JS
-*Bootstrap4
+* HTML5
+* CSS3
+* PHP,Mysql
+* JS
+* Bootstrap4
 
 ## Avancé du projet
 
-* 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée.
+* 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,recherche sur la mise en place du système de session ,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée .
 *
 *
 *
