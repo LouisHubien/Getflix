@@ -1,0 +1,28 @@
+body{
+    background: url("https://wallpaperset.com/w/full/0/2/8/432200.jpg");
+}
+
+
+/* style du formulaire */
+.form-container{
+    background-color: rgb(26,25,31,0.7);
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    width: 400px;
+    position: absolute;
+    top: 15vh;
+    color: #ffffff;
+}
+.bg-secondary{
+    opacity: 70%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.titre{
+    color: #b41717;
+    margin-top: 15px;
+    margin-left: 15px;
+}
