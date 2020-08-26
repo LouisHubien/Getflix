@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/style.css">
-    <title>Create an account</title>
+    <title>Forgotten password</title>
   </head>
   <body>
   <h1 class="titre">BlurFlix</h1>
@@ -24,15 +24,21 @@
                 <label for="formGroupExampleInput">Username</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nickname">
             </div>
+
             <div class="form-group">
-                <label for="formGroupExampleInput2">password</label>
+                <label for="formGroupExampleInput2">email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemple@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2">New password</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password1234">
             </div>
-            <button type="login" class="btn btn-primary btn-block">login</button>
+            <button type="confirm" class="btn btn-primary btn-block">confirm</button>
             </br>
-            <p>First time on BlurFlix? <a href="">register</a> </p>
-            </br>
-            <p>Login problem? <a href="">Click here</a> </p>
+            <p>You still have a problem? <a href="">contact us</a> </p>
+            
+            
         </form>
         </section>      
     </section>
