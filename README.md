@@ -31,7 +31,7 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 
 * 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,recherche sur la mise en place du système de session ,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée .
 * 25/08/2020 : création de la première page du formulaire, recherche sur authentification et système de session et partage de database.
-*
+* 26/08/2020 : creation des form d'enregistrement et d'oubli de mot de passe, creation de la home page, session register & lien avec le frontend.
 *
 *
 *
