@@ -19,7 +19,7 @@
   <section class="container">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
-        <form class="form-container" action="signup.php" method="post">
+        <form class="form-container" action="registercible.php" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="Username" name="username">
@@ -35,15 +35,13 @@
                 <input type="text" class="form-control" id="password" placeholder="password1234" name="password">
             </div>
             
-            <p>Are you older than 12? <p>
-
+           <p>Are you older than 12? <p>
             <div class="form-check form-check-inline">
-                
-                <input class="form-check-input" type="radio" id="yes"  name="1" value="1">
+                <input class="form-check-input" type="radio" id="yes"  name="adult" value="1">
                 <label class="form-check-label" for="yes">Yes</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio"  id="no"  name="0" value="0"> 
+                <input class="form-check-input" type="radio"  id="no"  name="adult" value="0"> 
                 <label class="form-check-label" for="no">No</label>
             </div>
             <input type="submit" value="Submit" class="btn btn-primary btn-block">

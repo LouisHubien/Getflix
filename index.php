@@ -19,7 +19,7 @@
   <section class="container">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
-        <form class="form-container" action="signincible.php" method="post">
+        <form class="form-container" action="indexcible.php" method="post">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="username" name="username">

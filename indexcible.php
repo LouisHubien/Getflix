@@ -20,7 +20,7 @@ $isPasswordCorrect = password_verify($_POST['password'], $resultat['Password']);
 if ($isPasswordCorrect) {
         session_start();
         $_SESSION['username'] = $username;
-        header('Location: accueil.php');
+        header('Location: home.php');
     }
     else {
         echo 'Mauvais identifiant ou mot de passe !';
