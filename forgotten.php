@@ -20,20 +20,12 @@
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
         <form class="form-container">
-            <div class="form-group">
-                <label for="formGroupExampleInput">Username</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nickname">
-            </div>
 
             <div class="form-group">
                 <label for="formGroupExampleInput2">email</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemple@gmail.com">
             </div>
 
-            <div class="form-group">
-                <label for="formGroupExampleInput2">New password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password1234">
-            </div>
             <button type="confirm" class="btn btn-primary btn-block">confirm</button>
             </br>
             <p>You still have a problem? <a href="">contact us</a> </p>
@@ -45,19 +37,10 @@
 
   </section>
 <!-- FOOTER -->
-<footer class="bg-secondary">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <!-- <h1 class="text-white text-capitalize font-weight-light p-3">BlurFlix</h1> -->
-                <h3 class="text-black font-weight-light mb-3">For video quality, we only have a blur name</h3>
-                <p>&copy;Copyright 2020 - by Becode</p>
-            </div>
 
-        </div>
-
-    </div>
-</footer>
+<?php 
+include 'footer.php';
+?>
   
 <!-- END FOOTER -->
   
