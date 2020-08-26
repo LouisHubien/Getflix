@@ -32,7 +32,7 @@
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="text" class="form-control" id="password" placeholder="password1234" name="password">
+                <input type="password" class="form-control" id="password" placeholder="password1234" name="password">
             </div>
             
            <p>Are you older than 12? <p>
