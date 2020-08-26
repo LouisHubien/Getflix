@@ -19,20 +19,20 @@
   <section class="container">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
-        <form class="form-container">
+        <form class="form-container" action="indexcible.php" method="post">
             <div class="form-group">
-                <label for="formGroupExampleInput">Username</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nickname">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="username" name="username">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password1234">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password1234" name="password">
             </div>
-            <button type="login" class="btn btn-primary btn-block">login</button>
+            <input type="submit" value="Valider" class="btn btn-primary btn-block">
             </br>
-            <p>First time on BlurFlix? <a href="">register</a> </p>
+            <p>First time on BlurFlix? <a href="register.php">Register here</a> </p>
             </br>
-            <p>Login problem? <a href="">Click here</a> </p>
+            <p>Login problem? <a href="forgotten.php">Click here</a> </p>
         </form>
         </section>      
     </section>
