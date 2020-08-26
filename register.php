@@ -19,24 +19,36 @@
   <section class="container">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
-        <form class="form-container">
+        <form class="form-container" action="signup.php" method="post">
             <div class="form-group">
-                <label for="formGroupExampleInput">Username</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nickname">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username" name="username">
             </div>
 
             <div class="form-group">
-                <label for="formGroupExampleInput2">email</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemple@gmail.com">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="exemple@mail.com" name="email">
             </div>
 
             <div class="form-group">
-                <label for="formGroupExampleInput2">password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password1234">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password" placeholder="password1234" name="password">
             </div>
-            <button type="confirm" class="btn btn-primary btn-block">confirm</button>
+            
+            <p>Are you older than 12? <p>
+
+            <div class="form-check form-check-inline">
+                
+                <input class="form-check-input" type="radio" id="yes"  name="1" value="1">
+                <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio"  id="no"  name="0" value="0"> 
+                <label class="form-check-label" for="no">No</label>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block">
             </br>
-            <p>need help for the registration? <a href="">click here</a> </p>
+            <p>Do you need help for the registration? <a href="">Click here</a> </p>
             </br>
             
         </form>
