@@ -20,20 +20,12 @@
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
         <form class="form-container">
-            <div class="form-group">
-                <label for="formGroupExampleInput">Username</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nickname">
-            </div>
 
             <div class="form-group">
                 <label for="formGroupExampleInput2">email</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemple@gmail.com">
             </div>
 
-            <div class="form-group">
-                <label for="formGroupExampleInput2">New password</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password1234">
-            </div>
             <button type="confirm" class="btn btn-primary btn-block">confirm</button>
             </br>
             <p>You still have a problem? <a href="">contact us</a> </p>
