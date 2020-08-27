@@ -23,6 +23,6 @@ if ($isPasswordCorrect) {
         header('Location: home.php');
     }
     else {
-        header('Location:index.php');
+        header('Location:signinagain.php');
     }
 ?>

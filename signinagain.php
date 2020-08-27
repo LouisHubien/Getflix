@@ -23,7 +23,8 @@
       
       <section class="row page">
         <div class="col-12">
-          <form class="form-container" action="indexcible.php" method="post">
+            <form class="form-container" action="indexcible.php" method="post">
+              <p class="text-white">You have entered an invalid username or password, please try again.</p>
             <div class="form-group">
               <label for="username">Username</label>
               <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
