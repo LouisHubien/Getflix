@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/indexstyle.css">
-    <title>Sign in</title>
+    <title>Forgotten password</title>
   </head>
 
   <body>
@@ -23,32 +23,21 @@
       
       <section class="row page">
         <div class="col-12">
-
-          <form class="form-container" action="indexcible.php" method="post">
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="password1234" name="password" required>
-            </div>
-            <input type="submit" value="Sign In" class="btn btn-block buttonindex">
-            <p>First time on BlurFlix? <a href="register.php">Register here</a></p>
-            <p>Did you forget your password? <a href="forgottenpassword.php">Click here</a></p>
-          </form>
-        
+            <form class="form-container" method="post" action="resetpassword.php">
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" class="form-control" id="email" placeholder="exemple@mail.com">
+                </div>
+                <input type="submit" value="Send recovery email" class="btn btn-block buttonindex">
+            </form>
         </div>
-      </section>
-
-      <!-- FOOTER -->
-      <section class="container-fluid paddingfix ">
-        <?php 
+    </section>
+    <!-- FOOTER -->
+    <section class="container-fluid paddingfix ">
+        <?php
         include 'footer.php';
         ?>  
-      </section>
     </section>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

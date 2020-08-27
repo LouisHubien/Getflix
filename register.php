@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/indexstyle.css">
-    <title>Sign in</title>
+    <title>Sign Up</title>
   </head>
 
   <body>
@@ -24,18 +24,33 @@
       <section class="row page">
         <div class="col-12">
 
-          <form class="form-container" action="indexcible.php" method="post">
+        <form class="form-container" action="registercible.php" method="post">
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
+              <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="exemple@mail.com" name="email" required>
             </div>
             <div class="form-group">
               <label for="password">Password</label>
               <input type="password" class="form-control" id="password" placeholder="password1234" name="password" required>
             </div>
-            <input type="submit" value="Sign In" class="btn btn-block buttonindex">
-            <p>First time on BlurFlix? <a href="register.php">Register here</a></p>
-            <p>Did you forget your password? <a href="forgottenpassword.php">Click here</a></p>
+            <div class="form-group">
+              <label for="passwordconfirmation">Confirm your password</label>
+              <input type="password" class="form-control" id="passwordconfirmation" placeholder="password1234" name="passwordconfirmation" required>
+            </div>
+              <p>Are you older than 12? <p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="yes"  name="adult" value="1" required>
+              <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio"  id="no"  name="adult" value="0"> 
+              <label class="form-check-label" for="no">No</label>
+            </div>
+            <input type="submit" value="Sign Up" class="btn btn-block buttonindex">
           </form>
         
         </div>

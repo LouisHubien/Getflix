@@ -1,0 +1,14 @@
+.jumbotron{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTyopPcOuiGXlDWVmIu_-wbtLeUG7XZVuReWg&usqp=CAU");
+    /* background-attachment: fixed;
+    min-width: 800px;
+    background-size: cover; */
+    color: #b41717;
+}
+.form-control{
+    margin-top: 50px;
+}
+
+body{
+    background-color: #221F1F;
+}
