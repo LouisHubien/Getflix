@@ -23,6 +23,6 @@ if ($isPasswordCorrect) {
         header('Location: home.php');
     }
     else {
-        echo 'Mauvais identifiant ou mot de passe !';
+        header('Location:index.php');
     }
 ?>

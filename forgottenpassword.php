@@ -7,45 +7,37 @@
     <meta name="description" content="Streaming platform in bootstrap">
     <meta name="keywords" content="HTML, CSS, JS, Bootstrap CDN, Php, Mysql">
     <meta name="author" content="Louis Hubien, eugenieuwimana, Noemie Uylenbroeck, El kabir Soufiane">
-
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="assetsCSS/style.css">
+    <link rel="stylesheet" href="assetsCSS/indexstyle.css">
     <title>Forgotten password</title>
   </head>
+
   <body>
-  <h1 class="titre">BlurFlix</h1>
-  <section class="container">
-    <section class="row justify-content-center">
-        <section class="col-12 col-sm-6 col-md-3">
-        <form class="form-container">
-
-            <div class="form-group">
-                <label for="formGroupExampleInput2">email</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="exemple@gmail.com">
-            </div>
-
-            <button type="confirm" class="btn btn-primary btn-block">confirm</button>
-            </br>
-            <p>You still have a problem? <a href="">contact us</a> </p>
-            
-            
-        </form>
-        </section>      
+    <section class="container-fluid flexboxtest">
+      <section class="row">
+        <div class="col-12">
+          <h1>BlurFlix</h1>
+        </div>
+      </section>
+      
+      <section class="row page">
+        <div class="col-12">
+            <form class="form-container" method="post" action="resetpassword.php">
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" class="form-control" id="email" placeholder="exemple@mail.com">
+                </div>
+                <input type="submit" value="Send recovery email" class="btn btn-block buttonindex">
+            </form>
+        </div>
     </section>
-
-  </section>
-<!-- FOOTER -->
-
-<?php 
-include 'footer.php';
-?>
-  
-<!-- END FOOTER -->
-  
-    
-
+    <!-- FOOTER -->
+    <section class="container-fluid paddingfix ">
+        <?php
+        include 'footer.php';
+        ?>  
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
