@@ -40,32 +40,32 @@ session_start();
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
                                 <div class="col-3">
-                                    <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a>                   
+                                    <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a>                   
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a>                     
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                             </div>
                         </div>
@@ -92,32 +92,32 @@ session_start();
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a>                     
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a>                     
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                                 <div class="col-3">
-                                    <a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> 
+                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
                                 </div>
                             </div>
                         </div>
