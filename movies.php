@@ -40,6 +40,9 @@ session_start()
                 <a class="dropdown-item text-dark" href="">Thrillers</a>
             </div>
         </div>
+        <section>
+        <?php include 'filtremovie.php'?>
+        </section>
         <!-- Footer -->
         <section class="fixed-bottom">
         <?php

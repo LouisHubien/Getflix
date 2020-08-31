@@ -27,7 +27,18 @@ session_start();
     ?>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="titre">Blurflix</h1>
+            <!-- titre en fonction du type de compte -->
+            <?php
+            include 'connectiondatabase.php';
+            $req = $bdd->prepare('SELECT adult FROM users WHERE Username = :username');
+            $req->execute(array(
+                'username' =>$_SESSION['username']));
+                $adult = $req->fetch();
+                if ($adult['adult']==0){
+                    echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
+                }else{echo '<h1 class="titre">Blurflix</h1>';};
+            ?>
+            
         </div>
     </div>
     <h2><a href="movies.php">Movies</a></h2>
@@ -40,16 +51,16 @@ session_start();
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
                                 <div class="col-3">
-                                    <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a>                   
+                                    <a href="video.php"><a href="video.php"><img src="" alt="avenger"></a> </a>                   
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                    <a href="video.php"><a href="video.php"><img src="" alt="avenger"></a> </a> 
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                    <a href="video.php"><a href="video.php"><img src="" alt="avenger"></a> </a> 
                                 </div>
                                 <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="Assets/Avenger.jpg" alt="avenger"></a> </a> 
+                                    <a href="video.php"><a href="video.php"><img src="<?php include 'filtremovie.php'?>" alt="avenger"></a> </a> 
                                 </div>
                             </div>
                         </div>
