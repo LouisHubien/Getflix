@@ -33,8 +33,7 @@ session_start()
         </div>
         <div class='row mt-5'>
             <div class="col-8 col-md-6 col-lg-4 offset-md-1">
-                <h2> Change your username :
-                    <?php /*echo $_SESSION['username']*/?>
+                <h2> Change your username : "<?php echo $_SESSION['username'];?>"
                 </h2>
                 <form>
                     <div class="form-group">
