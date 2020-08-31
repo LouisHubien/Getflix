@@ -34,7 +34,7 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 * 26/08/2020 : creation des form d'enregistrement et d'oubli de mot de passe, creation de la home page, session register & lien avec le frontend.
 * 27/08/2020 : avancement du frontend au niveau de la home page , recherche sur le système de filtrage via php , remplissage de la database.
 * 28/08/2020 : récupération des lien des trailer des films et séries, avancement du frontend search bar et gestionaire de compte, avancement sur la recherche du système de reset de mot de passe et redimensionnement des images en jpg .
-*
+* 31/08/2020 : recherche a propos de la search bar, fin du frontend, correction de la data base, implémentation des images et avancement sur la recherche du système de reset de mot de passe
 *
 *
 ## Screenshots de l'évolution du projet
