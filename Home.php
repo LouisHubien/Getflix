@@ -27,12 +27,7 @@ session_start();
     ?>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <?php
-            if($_SESSION['adult']==0){
-                echo <h1 class="titre">Blurflix KIDS</h1>
-            }else{<h1 class="titre">Blurflix</h1>}
-            ?>
-            
+            <h1 class="titre">Blurflix</h1>
         </div>
     </div>
     <h2><a href="movies.php">Movies</a></h2>
