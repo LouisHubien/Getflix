@@ -29,16 +29,16 @@ session_start();
 
         <form class="form-container" action="registercible.php" method="post">
         
-        <!-- Message d'erreur
+        <!-- Message d'erreur-->
         <p>
-        <?php/*
+        <?php
+        include 'connectiondatabase.php';
         if(isset($_SESSION['errorregister'])){
-          $errorRegister=$_SESSION['errorregister'];
-          print_r($errorRegister[0]);
-          unset($errorRegister);
-        }*/
+          print_r($_SESSION['errorregister'][0]);
+          unset($_SESSION['errorregister']);
+        }
         ?>
-        </p> -->
+        </p> 
 
             <div class="form-group">
               <label for="username">Username</label>

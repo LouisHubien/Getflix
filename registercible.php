@@ -1,13 +1,6 @@
 <?php
 session_start();
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
+include 'connectiondatabase.php';
 
 
 $username =htmlspecialchars($_POST['username'])  ;
@@ -28,8 +21,7 @@ $req->execute(array(
 	));
 	header('Location: index.php');
 }else{
-	// $_SESSION['errorregister']=array("Your password's confirmation failed, please try again.");
-	// header('Location:register.php');
-	header('Location:registeragain.php');
+	$_SESSION['errorregister']=array("Your password's confirmation failed, please try again.");
+	header('Location:register.php');
 }
 ?>
