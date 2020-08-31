@@ -1,14 +1,145 @@
-.jumbotron{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTyopPcOuiGXlDWVmIu_-wbtLeUG7XZVuReWg&usqp=CAU");
-    /* background-attachment: fixed;
-    min-width: 800px;
-    background-size: cover; */
-    color: #b41717;
+@font-face {
+    font-family: 'lane_-_narrowregular';
+    src: url('fontfamily/LANENAR_-webfont.eot');
+    src: url('fontfamily/LANENAR_-webfont.woff') format('woff'),
+         url('fontfamily/LANENAR_-webfont.ttf') format('truetype'),
+         url('fontfamily/LANENAR_-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-.form-control{
-    margin-top: 50px;
+
+.titre{
+    font-family: 'lane_-_narrowregular';
+    font-size : 700%;
+    margin-top : 1%;
+}
+
+.fontfamily{
+    font-family: 'lane_-_narrowregular';
+    font-size : 300%;
+    margin-top : 1%;
+}
+
+html,body{
+    height:100%;
 }
 
 body{
-    background-color: #221F1F;
+     background-color: #151314;
+     overflow-x: hidden;
+
+}
+/*Carousel*/
+
+
+
+/*navbar*/
+.blurflixnavbar{
+    color:#C76B16;
+    font-family: 'lane_-_narrowregular';
+    font-size : 150%
+}
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:white;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#c76c16;
+}
+
+#signoutbutton:hover {
+    cursor: pointer;
+}
+/*footer*/
+.wordfooter{
+    color:#151314;
+}
+
+footer{
+    background-color:#c76c16;
+    margin-top:2%;
+}
+
+/*jumbotron*/
+.jumbotron{
+    background-image: url("jumbotron.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ /*Searchpage*/
+ @media only screen and (max-width: 600px) {
+    #searchInput{
+        border: 1px solid #c76c16;;
+        background-color: #151314;
+        color:white;
+        font-size:60%;
+    }
+    #searchTitle{
+        font-size:150%;
+    }
+  }
+
+#searchInput{
+    border: 1px solid #c76c16;;
+    background-color: #151314;
+    color:white;
+}
+
+.searchpage{
+    margin:0;
+    pagging:0;
+}
+
+/*Search*/
+#searchTitle{
+    margin:0;
+}
+
+
+/* Manage your account */
+
+.flexaccount{
+    display : flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+}
+
+.buttonconfirm{
+    background-color:#c76c16;
+}
+
+/*Confirm box*/
+.swal-title {
+   font-family: 'lane_-_narrowregular';
+  }
+
+.swal-button--confirm {
+    background-color:#c76c16 ;
+}
+
+.swal-button--confirm:hover {
+    background-color:white;
+    color:black;
+
+}
+
+/*VIDEO*/
+.videocontainer{
+    height:100%;
+}
+
+
+/*Movies & TV-Shows*/
+.btngenres:hover{
+    border-color:#c76c16;
+    color:white;
+    
 }

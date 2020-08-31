@@ -1,4 +1,5 @@
 <?php
+session_start();
 try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', '');
@@ -27,6 +28,8 @@ $req->execute(array(
 	));
 	header('Location: index.php');
 }else{
-	header('Location:register.php');
+	// $_SESSION['errorregister']=array("Your password's confirmation failed, please try again.");
+	// header('Location:register.php');
+	header('Location:registeragain.php');
 }
 ?>
