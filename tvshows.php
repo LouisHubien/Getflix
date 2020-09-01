@@ -31,21 +31,22 @@ session_start()
             Genres
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item text-dark" href="">Action & Adventure</a>
-                <a class="dropdown-item text-dark" href="">Comedies</a>
-                <a class="dropdown-item text-dark" href="">Drama</a>
-                <a class="dropdown-item text-dark" href="">Horror</a>
-                <a class="dropdown-item text-dark" href="">Romantic</a>
-                <a class="dropdown-item text-dark" href="">Sci-Fi & Fantasy</a>
-                <a class="dropdown-item text-dark" href="">Thrillers</a>
+            <a class="dropdown-item text-dark" href="tvshows.php?genre=action">Action & Adventure</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=comedies">Comedies</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=drama">Drama</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=horror">Horror</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=romantic">Romantic</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=scififantasy">Sci-Fi & Fantasy</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=thrillers">Thrillers</a>
             </div>
         </div>
+        <section class="">
+        <?php include 'filtretvshow.php'?>
+        </section>
         <!-- Footer -->
-        <section class="fixed-bottom">
         <?php
         include 'footer.php'
         ?>
-
 
     <!-- JS scripts -->
     <?php 

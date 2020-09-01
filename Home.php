@@ -37,6 +37,7 @@ session_start();
                 if ($adult['adult']==0){
                     echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
                 }else{echo '<h1 class="titre">Blurflix</h1>';};
+            $req->closeCursor();
             ?>
             
         </div>

@@ -17,3 +17,4 @@ if ($isPasswordCorrect) {
     // $_SESSION['errorconnection']=array("You have entered an invalid username or password, please try again.");
     header('Location:signinagain.php');
 }
+$req->closeCursor();
