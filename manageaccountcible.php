@@ -2,7 +2,7 @@
 include 'connectiondatabase.php';
     
 //  Récupération de l'utilisateur et de son pass hashé
-$username=$_POST['username'];
+$newusername=$_POST['newusername'];
 $req = $bdd->prepare('SELECT Username, Password FROM users WHERE Username = :username');
 $req->execute(array('username' => $username));
 $resultat = $req->fetch();

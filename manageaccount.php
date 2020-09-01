@@ -35,8 +35,8 @@ session_start()
             <div class="col-8 col-md-6 col-lg-4 offset-md-1">
                 <h2> Change your username : "<?php echo $_SESSION['username'];?>"
                 </h2>
-                <form>
-                    <div class="form-group">
+                <form class="form-container" action="manageaccountcible.php" method="post">
+                    <div class="form-group ">
                         <label for="newusername">Choose a new username :</label>
                         <input id="newusername" name="newusername" type="text" class="form-control">
                     </div>
@@ -51,7 +51,7 @@ session_start()
         <div class='row mt-5'>
             <div class="col-8 col-md-6 col-lg-4 offset-md-1">
                 <h2> Change your password :</h2>
-                <form>
+                <form class="form-container" action="manageaccountcible.php" method="post">
                     <div class="form-group">
                         <label for="currentpassword">Enter your current password :</label>
                         <input id="currentpassword" name="currentpassword" type="text" class="form-control">
@@ -78,7 +78,7 @@ session_start()
                         echo $accountstatus;*/
                     ?>
                 </p>
-                <form>
+                <form class="form-container" action="manageaccountcible.php" method="post">
                     <p>Is this a kid account ?</p>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" id="yes"  name="adult" value="1">

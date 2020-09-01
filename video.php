@@ -32,7 +32,7 @@ session_start()
                     <?php
                     include 'connectiondatabase.php';
                     if(isset($_GET['titre'])){
-                        echo '<h1 class="titre">'. $_GET['titre'] . '</h1>';
+                        echo '<h1 class="fontfamily">'. $_GET['titre'] . '</h1>';
                     }
                     ?>
                 </div>

@@ -26,7 +26,7 @@ session_start()
     include 'header.php';
     ?>
         <h1 class="fontfamily">TV-Shows</h1>
-        <div class="dropdown ml-3">
+        <div class="dropdown ml-3 mb-3">
             <a class="btn btngenres dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Genres
             </a>
