@@ -1,11 +1,11 @@
 <?php
 include 'connectiondatabase.php';
 
-$reponse = $bdd->query('SELECT Thumbnails FROM entities WHERE movies=1');
+$reponse = $bdd->query('SELECT * FROM entities WHERE movies=1');
 
 while ($donnees = $reponse->fetch())
 {
-	echo $donnees['Thumbnails'][0] ;
+	echo $donnees['Thumbnails'];
 }
 
 $reponse->closeCursor();
