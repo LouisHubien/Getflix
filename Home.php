@@ -30,16 +30,10 @@ session_start();
             <!-- titre en fonction du type de compte -->
             <?php
             include 'connectiondatabase.php';
-            $req = $bdd->prepare('SELECT adult FROM users WHERE Username = :username');
-            $req->execute(array(
-                'username' =>$_SESSION['username']));
-                $adult = $req->fetch();
-                if ($adult['adult']==0){
-                    echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
-                }else{echo '<h1 class="titre">Blurflix</h1>';};
-            $req->closeCursor();
-            ?>
-            
+            if($_SESSION['adult']==0){
+                echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
+            }else{echo '<h1 class="titre">Blurflix</h1>';};
+            ?>  
         </div>
     </div>
     <h2><a href="movies.php">Movies</a></h2>
