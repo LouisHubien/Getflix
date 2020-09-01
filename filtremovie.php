@@ -1,5 +1,5 @@
 <?php
-include'connectiondatabase.php';
+include 'connectiondatabase.php';
 
 $reponse = $bdd->query('SELECT Thumbnails FROM entities WHERE movies=1');
 

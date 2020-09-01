@@ -14,6 +14,6 @@ if ($isPasswordCorrect) {
     $_SESSION['username'] = $username;
     header('Location: home.php');
 }else{
-    $_SESSION['errorconnection']=array("You have entered an invalid username or password, please try again.");
+    // $_SESSION['errorconnection']=array("You have entered an invalid username or password, please try again.");
     header('Location:signinagain.php');
 }
