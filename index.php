@@ -31,10 +31,10 @@
               // if(isset($_SESSION['errorconnection'])){
               //   print_r($_SESSION['errorconnection'][0]);
               //   unset($_SESSION['errorconnection']);
-              }
+              // }
               ?>
-            </p> 
-            <div class="form-group"> -->
+            </p>  -->
+            <div class="form-group">
               <label for="username">Username</label>
               <input type="text" class="form-control" id="username" placeholder="username" name="username" required>
             </div>
