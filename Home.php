@@ -40,7 +40,7 @@ session_start();
     <h2><a href="movies.php">Movies</a></h2>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="col 12">
                 <div id="CarouselMovies" class="carousel slide" data-ride="carousel" data-interval="false">
                 <div class="col-10 offset-1">
                     <div class="carousel-inner">
