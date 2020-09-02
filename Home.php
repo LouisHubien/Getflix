@@ -47,11 +47,11 @@ session_start();
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
                             <?php
-                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="1" LIMIT 4');
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="1" LIMIT 4');
 
                                 while($donnee = $reponse->fetch()){
-                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                 }
                             ?>                           
                             </div>
@@ -61,11 +61,11 @@ session_start();
                         <div class="row d-flex justify-content-around">
 
                             <?php
-                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="1" ORDER BY Id DESC LIMIT 4');
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="1" ORDER BY Id DESC LIMIT 4');
 
                                 while($donnee = $reponse->fetch()){
-                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                 }
                             ?> 
                                 
@@ -94,11 +94,11 @@ session_start();
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
                             <?php
-                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="0" LIMIT 4');
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="0" LIMIT 4');
 
                                 while($donnee = $reponse->fetch()){
-                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                 }
                             ?>
                             </div>
@@ -106,11 +106,11 @@ session_start();
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
                             <?php
-                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="0" ORDER BY Id DESC LIMIT 4');
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="0" ORDER BY Id DESC LIMIT 4');
 
                                 while($donnee = $reponse->fetch()){
-                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                 }
                             ?>
                             </div>
