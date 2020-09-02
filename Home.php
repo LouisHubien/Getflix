@@ -41,6 +41,7 @@ session_start();
             
         </div>
     </div>
+   
     <h2><a href="movies.php">Movies</a></h2>
     <section class="container-fluid">
         <div class="row">
@@ -50,34 +51,29 @@ session_start();
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
-                                <div class="col-3">
-                                    <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a>                   
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
+                            <?php
+                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="1" LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                }
+                            ?>                           
                             </div>
                         </div>
+
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+
+                            <?php
+                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="1" ORDER BY Id DESC LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                }
+                            ?> 
+                                
                             </div>
                         </div>
                     </div> 
@@ -93,7 +89,7 @@ session_start();
         </div>        
     </section>
 
-    <h2 class="mt-5"><a href="movies.php">TV-Shows</a></h2>
+    <h2 class="mt-5"><a href="tvshows.php">TV-Shows</a></h2>
     <section class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -102,34 +98,26 @@ session_start();
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+                            <?php
+                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="0" LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                }
+                            ?>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+                            <?php
+                                $bdd = new PDO('mysql:host=localhost;dbname=blurflix;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                                $reponse = $bdd->query('SELECT Thumbnails , movies FROM entities WHERE movies="0" ORDER BY Id DESC LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                     echo '<div class="col-3">' . $donnee['Thumbnails'] . '</div>';
+                                }
+                            ?>
                             </div>
                         </div>
                     </div> 
