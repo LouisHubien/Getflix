@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/Homestyle.css">
-    <script src="https://kit.fontawesome.com/11651444b5.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/11651444b5.js" crossorigin="anonymous"></script> -->
     <title>Blurflix-TVShows</title>
 </head>
 
@@ -25,18 +25,25 @@
     <section class="container searchpage ml-sm-3">
         <div class="row">
             <div class="col-12">
-                <form>
-                    <h1><input id="searchInput" type="search" Placeholder ="Search..."></h1>
+                <form action="searchResults.php" method="post">
+                    <h1><input id="searchInput" type="search" Placeholder ="Search..." name="search"></h1>
                 </form>
             </div>
         </div>
     <h2 id="searchTitle" class="text-white fontfamily small text-left"></h2>
     </section>
     
-    <section class="searchResults"></section>
-
+    <section class="searchResults">
+    <?php
+    $search=htmlspecialchars($_POST['search']);
+    $req = $bdd->querry('SELECT * FROM entities WHERE Name = $search LIKE');
+    $donnees = $req->fetch();
+    ?>
+    </section>
 
     <!-- JS scripts -->
+    <!-- Own script -->
+    <script src="script.js"> </script>
     <?php 
         include 'scriptinclude.php';
     ?>

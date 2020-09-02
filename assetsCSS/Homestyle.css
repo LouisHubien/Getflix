@@ -33,9 +33,6 @@ body{
      overflow-x: hidden;
 
 }
-/*Carousel*/
-
-
 
 /*navbar*/
 .blurflixnavbar{
@@ -139,4 +136,16 @@ footer{
 .btngenres:hover{
     border-color:#c76c16;
     color:white;
+}
+
+.tvshowORmovies{
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+.footertvshowmovies{
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
