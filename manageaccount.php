@@ -53,7 +53,7 @@ session_start();
                     </div>
                     <div class="form-group">
                         <label for="newusernameconfirmation">Confirm your new username :</label>
-                        <input id="newusernameconfirmation" name="newusernameconfirmation" type="text" class="form-control">
+                        <input id="newusernameconfirmation" name="newusernameconfirmation" type="pass" class="form-control">
                     </div>
                     <input type="submit" value="Confirm" class="btn text-white buttonconfirm">
                 </form>
@@ -76,15 +76,15 @@ session_start();
                 <form class="form-container" action="manageaccountcible.php" method="post">
                     <div class="form-group">
                         <label for="currentpassword">Enter your current password :</label>
-                        <input id="currentpassword" name="currentpassword" type="text" class="form-control">
+                        <input id="currentpassword" name="currentpassword" type="password" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="newpassword">Choose your new password :</label>
-                        <input id="newpassword" name="newpassword" type="text" class="form-control">
+                        <input id="newpassword" name="newpassword" type="password" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="newpasswordconfirmation">Confirm your new password :</label>
-                        <input id="newpasswordconfirmation" name="newpasswordconfirmation" type="text" class="form-control">
+                        <input id="newpasswordconfirmation" name="newpasswordconfirmation" type="password" class="form-control">
                     </div>
                     <input type="submit" value="Confirm" class="btn text-white buttonconfirm">
                 </form>

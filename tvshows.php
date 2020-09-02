@@ -40,14 +40,14 @@ session_start()
                 <a class="dropdown-item text-dark" href="tvshows.php?genre=thrillers">Thrillers</a>
             </div>
         </div>
-        <section class="">
+        <section>
         <?php include 'filtretvshow.php'?>
-        </section>
+        
         <!-- Footer -->
         <?php
         include 'footer.php'
         ?>
-
+        </section>
     <!-- JS scripts -->
     <?php 
         include 'scriptinclude.php';
