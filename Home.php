@@ -36,43 +36,39 @@ session_start();
             ?>  
         </div>
     </div>
+   
     <h2><a href="movies.php">Movies</a></h2>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div id="CarouselMovies" class="carousel slide" data-ride="carousel" data-interval="false">
                 <div class="col-10 offset-1">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
-                                <div class="col-3">
-                                    <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a>                   
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
-                                <div class="col-3">
-                                <a href="video.php"><a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> </a> 
-                                </div>
+                            <?php
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="1" LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                }
+                            ?>                           
                             </div>
                         </div>
+
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+
+                            <?php
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="1" ORDER BY Id DESC LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                }
+                            ?> 
+                                
                             </div>
                         </div>
                     </div> 
@@ -88,7 +84,7 @@ session_start();
         </div>        
     </section>
 
-    <h2 class="mt-5"><a href="movies.php">TV-Shows</a></h2>
+    <h2 class="mt-5"><a href="tvshows.php">TV-Shows</a></h2>
     <section class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -97,34 +93,26 @@ session_start();
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row d-flex justify-content-around ">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+                            <?php
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="0" LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                }
+                            ?>
                             </div>
                         </div>
                         <div class="carousel-item">
                         <div class="row d-flex justify-content-around">
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a>                     
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="video.php"><img src="assets/Avenger.jpg" alt="avenger"></a> 
-                                </div>
+                            <?php
+                                include 'connectiondatabase.php';
+                                $reponse = $bdd->query('SELECT * FROM entities WHERE movies="0" ORDER BY Id DESC LIMIT 4');
+
+                                while($donnee = $reponse->fetch()){
+                                    echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                }
+                            ?>
                             </div>
                         </div>
                     </div> 
