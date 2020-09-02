@@ -28,15 +28,11 @@ $statement->execute(array(
 $requestInfo = $statement->fetch(PDO::FETCH_ASSOC);
  
 if(empty($requestInfo)){
-    echo 'Invalid request!';
+    header('Location: resetpassword.php');
     exit;
 }
  
 
 $_SESSION['user_id_reset_pass'] = $userId;
- 
-//Aller au form
-header('Location: rewritepassword.php');
-exit;
 
 ?>

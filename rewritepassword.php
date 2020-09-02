@@ -1,6 +1,8 @@
 <?php
 session_start();
+include 'rewritepasswordcible.php';
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,13 +30,8 @@ session_start();
         <div class="col-12">
 
         <form class="form-container" action="changepasswordreset.php" method="post">
-        
-        <!-- Message d'erreur-->
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="exemple@mail.com" name="email" required>
-            </div>
+            <input type="hidden" value="<?= $userId ?>" id="tokenid" name="tokenid" />
+            <input type="hidden" value="<?= $token ?>" id="token" name="token" />
             <div class="form-group">
               <label for="password">New Password</label>
               <input type="password" class="form-control" id="password" placeholder="password1234" name="password" required>
