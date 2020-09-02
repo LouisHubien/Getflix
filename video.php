@@ -28,14 +28,27 @@ session_start()
         <section class="container videocontainer">
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2">
-                    <h1 class="fontfamily">Titre du film</h1>
+                    <!-- titre de la vidéo -->
+                    <?php
+                    include 'connectiondatabase.php';
+                    if(isset($_GET['titre'])){
+                        echo '<h1 class="fontfamily">'. $_GET['titre'] . '</h1>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2">
-                    <iframe width="100%" 
-                    src="https://www.youtube.com/watch?v=P7t13SGytRk">
-                </iframe>
+                <?php
+                include 'connectiondatabase.php';
+                    if(isset($_GET['titre'])){
+                        $req = $bdd->prepare('SELECT * FROM entities WHERE Name = :name');
+                        $req->execute(array('name' => $_GET['titre']));
+                        $resultat = $req->fetch();
+                        echo $resultat['Preview'];
+                        $req->closeCursor();
+                    }
+                    ?>
                 </div>
             </div>
             <div class="row">

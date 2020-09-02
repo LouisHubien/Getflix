@@ -26,28 +26,29 @@ session_start()
     include 'header.php';
     ?>
         <h1 class="fontfamily ml-3">Movies</h1>
-        <div class="dropdown ml-3">
+        <div class="dropdown ml-3 mb-3">
             <a class="btn btngenres dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Genres
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item text-dark" href="">Action & Adventure</a>
-                <a class="dropdown-item text-dark" href="">Comedies</a>
-                <a class="dropdown-item text-dark" href="">Drama</a>
-                <a class="dropdown-item text-dark" href="">Horror</a>
-                <a class="dropdown-item text-dark" href="">Romantic</a>
-                <a class="dropdown-item text-dark" href="">Sci-Fi & Fantasy</a>
-                <a class="dropdown-item text-dark" href="">Thrillers</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=action">Action & Adventure</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=comedies">Comedies</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=drama">Drama</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=horror">Horror</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=romantic">Romantic</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=scififantasy">Sci-Fi & Fantasy</a>
+                <a class="dropdown-item text-dark" href="movies.php?genre=thrillers">Thrillers</a>
             </div>
         </div>
-        <section>
+        <section class="tvshowORmovies">
         <?php include 'filtremovie.php'?>
         </section>
         <!-- Footer -->
-        <section class="fixed-bottom">
+        <section class="footertvshowmovies">
         <?php
         include 'footer.php'
         ?>
+        </section>
     <!-- JS scripts -->
     <?php 
         include 'scriptinclude.php';

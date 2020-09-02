@@ -24,16 +24,6 @@
       <section class="row page">
         <div class="col-12">
           <form class="form-container" action="indexcible.php" method="post">
-            <!-- Message d'erreur-->
-            <!-- <p>
-              <?php
-              // include 'connectiondatabase.php';
-              // if(isset($_SESSION['errorconnection'])){
-              //   print_r($_SESSION['errorconnection'][0]);
-              //   unset($_SESSION['errorconnection']);
-              // }
-              ?>
-            </p>  -->
             <div class="form-group">
               <label for="username">Username</label>
               <input type="text" class="form-control" id="username" placeholder="username" name="username" required>

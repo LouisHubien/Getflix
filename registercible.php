@@ -24,4 +24,5 @@ $req->execute(array(
 	$_SESSION['errorregister']=array("Your password's confirmation failed, please try again.");
 	header('Location:register.php');
 }
+$req->closeCursor();
 ?>

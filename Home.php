@@ -17,7 +17,7 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/Homestyle.css">
-    <script src="https://kit.fontawesome.com/11651444b5.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/11651444b5.js" crossorigin="anonymous"></script> -->
     <title>Blurflix-Home</title>
 </head>
 
@@ -30,15 +30,10 @@ session_start();
             <!-- titre en fonction du type de compte -->
             <?php
             include 'connectiondatabase.php';
-            $req = $bdd->prepare('SELECT adult FROM users WHERE Username = :username');
-            $req->execute(array(
-                'username' =>$_SESSION['username']));
-                $adult = $req->fetch();
-                if ($adult['adult']==0){
-                    echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
-                }else{echo '<h1 class="titre">Blurflix</h1>';};
-            ?>
-            
+            if($_SESSION['adult']==0){
+                echo '<h1 class="titre">Blurflix for <span class="kids">Kids</span></h1>';
+            }else{echo '<h1 class="titre">Blurflix</h1>';};
+            ?>  
         </div>
     </div>
    
