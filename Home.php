@@ -55,12 +55,12 @@ session_start();
                                 if($_SESSION['adult']==0){
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 AND adult=0 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3 " id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }  
                                 }else{
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }
                                 ?>                           
@@ -76,12 +76,12 @@ session_start();
                                 if($_SESSION['adult']==0){
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 AND adult=0 ORDER BY Id DESC LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }else{
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 ORDER BY Id DESC LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }
                                 ?> 
@@ -117,12 +117,12 @@ session_start();
                                 if($_SESSION['adult']==0){
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=0 AND adult=0 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }else{
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=0 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }
                                 ?>
@@ -137,12 +137,12 @@ session_start();
                                 if($_SESSION['adult']==0){
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=0 AND adult=0 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }else{
                                     $reponse = $bdd->query('SELECT * FROM entities WHERE movies=0 LIMIT 4');
                                     while($donnee = $reponse->fetch()){
-                                        echo '<div class="col-3"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
+                                        echo '<div class="col-3" id="respcarou"> <a href="video.php?titre='. $donnee['Name']. '">' . $donnee['Thumbnails'] . '</a></div>';
                                     }
                                 }
                                 ?>
