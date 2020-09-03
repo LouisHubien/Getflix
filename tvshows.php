@@ -31,7 +31,7 @@ session_start()
             Genres
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item text-dark" href="tvshows.php?genre=action">Action & Adventure</a>
+                <a class="dropdown-item text-dark" href="tvshows.php?genre=action">Action & Adventure</a>
                 <a class="dropdown-item text-dark" href="tvshows.php?genre=comedies">Comedies</a>
                 <a class="dropdown-item text-dark" href="tvshows.php?genre=drama">Drama</a>
                 <a class="dropdown-item text-dark" href="tvshows.php?genre=horror">Horror</a>
