@@ -163,3 +163,7 @@ footer{
     position:relative;
     width:100%;
 }
+
+.topspacing{
+    margin-top: 1%;
+}
