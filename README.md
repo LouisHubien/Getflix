@@ -29,7 +29,7 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 
 ## Lien vers notre site 
 
-BLURFLIX:[ICI](http://blurflix.rf.gd/).
+BLURFLIX: [ICI](http://blurflix.rf.gd/).
 ## Avancé du projet
 
 * 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,recherche sur la mise en place du système de session ,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée .
