@@ -56,6 +56,12 @@ a:hover{
 #signoutbutton:hover {
     cursor: pointer;
 }
+
+/* format des items du carousel */
+#respcarou{
+    width: 200px;
+    height: 300px;
+}
 /*footer*/
 .wordfooter{
     color:#151314;
@@ -83,6 +89,12 @@ footer{
     }
     #searchTitle{
         font-size:150%;
+    }
+
+    /* format des items du carousel */
+    #respcarou{
+     width: 100px;
+     height: 150px;
     }
   }
 
@@ -163,3 +175,5 @@ footer{
     position:relative;
     width:100%;
 }
+
+
