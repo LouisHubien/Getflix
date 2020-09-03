@@ -65,8 +65,6 @@ session_start()
     ?>
     </section>
     <!-- JS scripts -->
-    <!-- Own script -->
-    <script src="script.js"> </script>
     <?php 
         include 'scriptinclude.php';
     ?>
