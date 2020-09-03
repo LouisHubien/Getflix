@@ -35,8 +35,9 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 * 27/08/2020 : avancement du frontend au niveau de la home page , recherche sur le système de filtrage via php , remplissage de la database.
 * 28/08/2020 : récupération des lien des trailer des films et séries, avancement du frontend search bar et gestionaire de compte, avancement sur la recherche du système de reset de mot de passe et redimensionnement des images en jpg .
 * 31/08/2020 : recherche a propos de la search bar, fin du frontend, correction de la data base, implémentation des images et avancement sur la recherche du système de reset de mot de passe
-*
-*
+* 01/08/2020 : avancement sur la recherche du système de reset de mot de passe, composition de la search bar et mise en place d'un multiple item carousel via php.
+* 02/08/2020 : (Jour de présentiel) correction de bug sur l'implémentation des tokens dans la database, mise en place d'un multiple item carousel via php.
+* 03/09/2020 : hébergement du site + adaptation du multiple item carousel en mono item carousel.
 ## Screenshots de l'évolution du projet
 
 ![](assets/Figma.JPG)
