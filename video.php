@@ -1,6 +1,5 @@
 <?php
-session_start()
-
+session_start();
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,7 +9,7 @@ session_start()
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Streaming platform in bootstrap">
-    <meta name="keywords" content="HTML, CSS, JS, Bootstrap CDN, Php, Mysql">
+    <meta name="keywords" content="HTML, CSS, JS, Bootstrap  CDN, Php, Mysql">
     <meta name="author" content="Louis Hubien, eugenieuwimana, Noemie Uylenbroeck, El kabir Soufiane">
 
 
@@ -46,70 +45,56 @@ session_start()
                         $req = $bdd->prepare('SELECT * FROM entities WHERE Name = :name');
                         $req->execute(array('name' => $_GET['titre']));
                         $resultat = $req->fetch();
+                        $videoId=$resultat['Id'];
                         echo $resultat['Preview'];
                         $req->closeCursor();
                     }
                     ?>
                 </div>
             </div>
-            <div class="row">
-<<<<<<< HEAD
-                <div class="col-12 col-md-8 offset-md-2">
-                    <h2>Commentaires</h2>                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-8 offset-md-2 ">
-                <div class="panel panel-info">
-                <div class="panel-body">            
-                <?php
-        /* ------------------------COMMENT  SECTION ----------------------- */
-        include 'connectiondatabase.php';
-        $req = $bdd->prepare('SELECT * FROM comments WHERE videoId=:videoId ORDER BY date_creation DESC');
-        $req->execute(array(
-            'entities' => $_GET['id'],
-            ));   
-        
-            while ($data = $req->fetch()) 
-            {
-            echo '<p>' . $data['author'] . ' : </strong>' . $data['content'] . '</p>';
-        }
-        $req->closeCursor();
-    ?>       
-        <form class="form-inline" method= "post" action="comment.php">
-            <!-- <input type='hidden' name='User_id'> -->
-            <!-- <input type='hidden' name='Date' value= " <?php echo date('Y-m-d H:i:s') ?>"> -->
-            <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea" name="comment"></textarea>
-            <button class="button pull-right" type="button">Comment</button>
-            <input type="submit" value="Comment" class="btn btn-block buttonindex">
-        </form>
-=======
-                <div class="col-12 ">
-                    <h2>Commentaires</h2>
-                </div>
-            </div>
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-12">
->>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
+                    <h2 class="font">Commentaires</h2>                    
                 </div>
             </div>
-                    
-            </div>
-            </div>
+            <div class="row ml-12">
+                <div class="col-12">           
+                    <?php
+                    /* ------------------------COMMENT  SECTION ----------------------- */
+                    include 'connectiondatabase.php';
+                    $title=$_GET['titre'];
+                    $req = $bdd->prepare('SELECT * FROM comments WHERE videoId=:videoId');
+                    $req->execute(array('videoId' => $videoId));
+                    while ($donnees = $req->fetch()) 
+                    {
+                        echo '<p>' . $donnees ['Username'] . ' : ' . $donnees ['Comment'] . '</p>';
+                    }
+                    $req->closeCursor();
+                    ?>
+                    <form method="post">
+                        <label for="comment">Comment :</label>
+                        <textarea class="form-control col-8 mb-1" id="comment" name="comment" rows="3" placeholder="Enter your comment here." required></textarea>
+                        <input type="submit" value="Comment" class="btn buttoncomment">
+                    </form>
+                    <?php
+                    if (isset($_POST['comment'])){
+                        $req = $bdd->prepare('INSERT INTO comments (Comment, Username, videoId) VALUES (:content, :Username, :videoId)');
+                        $req->execute(array(
+                            'content' => $_POST['comment'],
+                            'Username' => $_SESSION['username'],
+                            'videoId' => $videoId,
+                        ));
+                        header('Location:video.php?titre=' . $title);
+                        $req->closeCursor();
+                    }
+                    ?>
+                </div>
         </section>
 
         <!-- Footer -->
-<<<<<<< HEAD
-        
         <?php
         include 'footer.php'
         ?>
-    
-=======
-        <?php
-        include 'footer.php'
-        ?>
->>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
  
     <!-- JS scripts -->
     <?php 

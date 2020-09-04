@@ -24,6 +24,10 @@
     margin-top : 1%;
 }
 
+.font{
+    font-family: 'lane_-_narrowregular';
+}
+
 html,body{
     height:100%;
 }
@@ -146,7 +150,6 @@ footer{
 
 .iframecontainer{
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 } 
 
 .responsive-iframe {
@@ -165,9 +168,8 @@ footer{
     color:white;
 }
 
-<<<<<<< HEAD
 /* style du Commentaire */
-.pb-cmnt-container {
+/* .pb-cmnt-container {
 
     margin-top: 100px;
 }
@@ -225,8 +227,9 @@ footer{
     100% {
       background: $color-primary;
     }
-  }
-=======
+  } */
+
+/* Video */
 .tvshowORmovies{
     min-height:60%;
     margin:0 auto;
@@ -241,4 +244,8 @@ footer{
 .topspacing{
     margin-top: 1%;
 }
->>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
+
+.buttoncomment{
+    background-color: #c76c16;
+    color:white;
+}

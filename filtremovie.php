@@ -1,16 +1,5 @@
 <?php
 include 'connectiondatabase.php';
-<<<<<<< HEAD
-if(isset($_GET['genre'])){
-	if($_GET['genre']=="action"){
-		$reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 AND categoryId=1');
-		while ($donnees = $reponse->fetch())
-		{
-			echo "<a href=\"video.php?titre=" . $donnees['Name'] . "&amp;videoId=" . $donnees['id'] . "\"><div class=\"d-inline my-2 mx-2\">" . $donnees['Thumbnails'] . "</div></a>";
-		}
-		$reponse->closeCursor();
-=======
->>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
 
 //SI SESSION ENFANT
 if($_SESSION['adult']==0){
