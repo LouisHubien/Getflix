@@ -5,7 +5,7 @@ if(isset($_GET['genre'])){
 		$reponse = $bdd->query('SELECT * FROM entities WHERE movies=1 AND categoryId=1');
 		while ($donnees = $reponse->fetch())
 		{
-			echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\"><div class=\"d-inline my-2 mx-2\">" . $donnees['Thumbnails'] . "</div></a>";
+			echo "<a href=\"video.php?titre=" . $donnees['Name'] . "&amp;videoId=" . $donnees['id'] . "\"><div class=\"d-inline my-2 mx-2\">" . $donnees['Thumbnails'] . "</div></a>";
 		}
 		$reponse->closeCursor();
 

@@ -1,5 +1,6 @@
 <?php
 session_start()
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -53,21 +54,47 @@ session_start()
             </div>
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2">
-                    <h2>Commentaires</h2>
+                    <h2>Commentaires</h2>                    
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-8 offset-md-2 border">
-                    <h1 class="fontfamily"></h1>
+                <div class="col-12 col-md-8 offset-md-2 ">
+                <div class="panel panel-info">
+                <div class="panel-body">            
+                <?php
+        /* ------------------------COMMENT  SECTION ----------------------- */
+        include 'connectiondatabase.php';
+        $req = $bdd->prepare('SELECT * FROM comments WHERE videoId=:videoId ORDER BY date_creation DESC');
+        $req->execute(array(
+            'entities' => $_GET['id'],
+            ));   
+        
+            while ($data = $req->fetch()) 
+            {
+            echo '<p>' . $data['author'] . ' : </strong>' . $data['content'] . '</p>';
+        }
+        $req->closeCursor();
+    ?>       
+        <form class="form-inline" method= "post" action="comment.php">
+            <!-- <input type='hidden' name='User_id'> -->
+            <!-- <input type='hidden' name='Date' value= " <?php echo date('Y-m-d H:i:s') ?>"> -->
+            <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea" name="comment"></textarea>
+            <button class="button pull-right" type="button">Comment</button>
+            <input type="submit" value="Comment" class="btn btn-block buttonindex">
+        </form>
                 </div>
             </div>
+                    
+            </div>
+            </div>
         </section>
+
         <!-- Footer -->
-        <section class="fixed-bottom">
+        
         <?php
         include 'footer.php'
         ?>
-    </section>
+    
  
     <!-- JS scripts -->
     <?php 
