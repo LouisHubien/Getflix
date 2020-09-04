@@ -23,13 +23,7 @@
       
       <section class="row page">
         <div class="col-12">
-            <form class="form-container" method="post" action="resetpassword.php">
-                <div class="form-group">
-                    <label for="email">email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="exemple@mail.com">
-                </div>
-                <input type="submit" value="Send recovery email" class="btn btn-block buttonindex">
-            </form>
+        <p class="text-center text-white bg-dark">An email has been sent to your email adress to reset your password !</p>
         </div>
     </section>
     <!-- FOOTER -->
