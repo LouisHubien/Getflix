@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!doctype html>
 <html lang="en">
 
@@ -25,17 +28,42 @@
     <section class="container searchpage ml-sm-3">
         <div class="row">
             <div class="col-12">
-                <form>
-                    <h1><input id="searchInput" type="search" Placeholder ="Search..."></h1>
+                <form action="searchResults.php" method="post">
+                    <h1><input name="search" id="searchInput" type="search" Placeholder ="Search a title..."></h1>
                 </form>
             </div>
         </div>
-    <h2 id="searchTitle" class="text-white fontfamily small text-left"></h2>
     </section>
-    
-    <section class="searchResults"></section>
+    <section class="searchResults  ml-sm-3">
+    <!-- RECHERCHE -->
+    <?php
+    include 'connectiondatabase.php';
+    if(isset($_POST['search'])){
+        $search=htmlspecialchars($_POST['search']);
+        echo "<h2 class=\"fontfamily\">Search for " . $search . ":<h2>";
+        $req = $bdd->query('SELECT * FROM entities');
 
+        // Rechercher la recherche dans les Names de la database (les 2 mis en minuscules)
+        while ($donnees = $req->fetch()){
+            $searchlw=strtolower($search);
+            $movieName=strtolower($donnees['Name']) ;
+            $searchpos=strpos($movieName,$searchlw);
+            if($searchpos!==FALSE){
 
+                // Si account enfant, seuls les films enfant s'afficheront
+                if($_SESSION['adult']==0){
+                    if($donnees['adult']==0){
+                        echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\"><div class=\"d-inline my-2 mx-2\">" . $donnees['Thumbnails'] . "</div></a>";
+                    }
+
+                //Sinon tous les films s'affichent
+                }else{echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\"><div class=\"d-inline my-2 mx-2\">" . $donnees['Thumbnails'] . "</div></a>";}
+            }
+        }
+        $req->closeCursor();
+    }
+    ?>
+    </section>
     <!-- JS scripts -->
     <?php 
         include 'scriptinclude.php';

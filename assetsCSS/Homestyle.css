@@ -33,9 +33,6 @@ body{
      overflow-x: hidden;
 
 }
-/*Carousel*/
-
-
 
 /*navbar*/
 .blurflixnavbar{
@@ -58,6 +55,12 @@ a:hover{
 
 #signoutbutton:hover {
     cursor: pointer;
+}
+
+/* format des items du carousel */
+#respcarou{
+    width: 200px;
+    height: 300px;
 }
 /*footer*/
 .wordfooter{
@@ -86,6 +89,12 @@ footer{
     }
     #searchTitle{
         font-size:150%;
+    }
+
+    /* format des items du carousel */
+    #respcarou{
+     width: 100px;
+     height: 150px;
     }
   }
 
@@ -132,8 +141,23 @@ footer{
 /*VIDEO*/
 .videocontainer{
     height:100%;
+    width: 100%;
 }
 
+.iframecontainer{
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+} 
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*Movies & TV-Shows*/
 .btngenres:hover{
@@ -141,6 +165,7 @@ footer{
     color:white;
 }
 
+<<<<<<< HEAD
 /* style du Commentaire */
 .pb-cmnt-container {
 
@@ -201,3 +226,19 @@ footer{
       background: $color-primary;
     }
   }
+=======
+.tvshowORmovies{
+    min-height:60%;
+    margin:0 auto;
+    position:relative;
+}
+
+.footertvshowmovies{
+    position:relative;
+    width:100%;
+}
+
+.topspacing{
+    margin-top: 1%;
+}
+>>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7

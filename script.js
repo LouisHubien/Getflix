@@ -18,7 +18,7 @@ function searchResults() {
     let input = document.querySelector('#searchInput');
     let search = input.value;
     if (search != "") {
-        // trouver ici comment insérer le résultat de "searchresults.php"(AJAX request)
+        //
         document.getElementById("searchTitle").innerHTML ="Search results for " + search;
         document.getElementById("searchResults").innerHTML = " ";
     } else {

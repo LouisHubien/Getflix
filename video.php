@@ -28,7 +28,7 @@ session_start()
     ?>
         <section class="container videocontainer">
             <div class="row">
-                <div class="col-12 col-md-8 offset-md-2">
+                <div class="col-12 ">
                     <!-- titre de la vidéo -->
                     <?php
                     include 'connectiondatabase.php';
@@ -39,7 +39,7 @@ session_start()
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-8 offset-md-2">
+                <div class="col-12 iframecontainer">
                 <?php
                 include 'connectiondatabase.php';
                     if(isset($_GET['titre'])){
@@ -53,6 +53,7 @@ session_start()
                 </div>
             </div>
             <div class="row">
+<<<<<<< HEAD
                 <div class="col-12 col-md-8 offset-md-2">
                     <h2>Commentaires</h2>                    
                 </div>
@@ -82,6 +83,14 @@ session_start()
             <button class="button pull-right" type="button">Comment</button>
             <input type="submit" value="Comment" class="btn btn-block buttonindex">
         </form>
+=======
+                <div class="col-12 ">
+                    <h2>Commentaires</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+>>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
                 </div>
             </div>
                     
@@ -90,11 +99,17 @@ session_start()
         </section>
 
         <!-- Footer -->
+<<<<<<< HEAD
         
         <?php
         include 'footer.php'
         ?>
     
+=======
+        <?php
+        include 'footer.php'
+        ?>
+>>>>>>> acf62fe7bc19d65c2fe256846d812f11c9278fa7
  
     <!-- JS scripts -->
     <?php 
