@@ -19,7 +19,13 @@
     </ul>
     <ul class="navbar-nav form-inline ml-auto">
         <li class="nav-item mx-2"><a class="nav-link" href="searchResults.php" title="Search"><i class="fas fa-search" style="font-size: 1.3em;color:#C76B16"></a></i></li>
-            
+        <!-- Si compte admin   -->
+        <?php
+        include 'connectiondatabase.php';
+        if($_SESSION['admin']==1){
+        echo "<li class=\"nav-item mx-2\"><a class=\"nav-link\" href=\"admin.php\" title=\"Admin\"><i class=\"fas fa-wrench\" style=\"font-size: 1.3em;color:#C76B16\"></a></i></li>";
+        }
+        ?>
         <li class="nav-item mx-2"><a class="nav-link" href="manageaccount.php" title="Manage account"><i class="far fa-user" style="font-size: 1.3em;color:#C76B16"></a></i></li>
         
         <li class="nav-item mx-2"><a class="nav-link" title="Sign out" id="signoutbutton"><i class="fas fa-sign-out-alt" style="font-size: 1.3em;color:#C76B16"></i></a></li>
