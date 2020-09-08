@@ -24,6 +24,10 @@
     margin-top : 1%;
 }
 
+.font{
+    font-family: 'lane_-_narrowregular';
+}
+
 html,body{
     height:100%;
 }
@@ -69,7 +73,7 @@ a:hover{
 
 footer{
     background-color:#c76c16;
-    margin-top:2%;
+    margin-top:10%;
 }
 
 /*jumbotron*/
@@ -146,7 +150,6 @@ footer{
 
 .iframecontainer{
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 } 
 
 .responsive-iframe {
@@ -165,6 +168,68 @@ footer{
     color:white;
 }
 
+/* style du Commentaire */
+/* .pb-cmnt-container {
+
+    margin-top: 100px;
+}
+
+.pb-cmnt-textarea {
+    resize: none;
+    padding: 20px;
+    height: 130px;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+}
+
+
+.button {
+    background: #C76B16;
+    border: none;
+    border-radius: 25px;
+    color: snow; 
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: .1em;
+    outline: none;
+    padding: .75em 2em;
+    position: relative; 
+    text-transform: uppercase;
+  }
+
+  .button::before {
+    background: #e7f0e7;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px); // Controls the extent of the initial glow
+    opacity: .75;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1; // Set behind primary button
+  }
+
+  .button:hover::before {
+    filter: blur(20px); // Increases the extent of the glow on hover
+    opacity: 1;
+  }
+
+  @keyframes glow {
+    0% {
+      background: $color-primary;
+    }
+    25% {
+      background: $color-primary-light;
+    }
+    100% {
+      background: $color-primary;
+    }
+  } */
+
+/* Video */
 .tvshowORmovies{
     min-height:60%;
     margin:0 auto;
@@ -178,4 +243,9 @@ footer{
 
 .topspacing{
     margin-top: 1%;
+}
+
+.buttoncomment{
+    background-color: #c76c16;
+    color:white;
 }

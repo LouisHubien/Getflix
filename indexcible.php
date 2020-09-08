@@ -13,6 +13,7 @@ if ($isPasswordCorrect) {
     session_start();
     $_SESSION['username'] = $username;
     $_SESSION['adult'] = $resultat['Adult'];
+    $_SESSION['admin'] = $resultat['Admin'];
     header('Location: home.php');
 }else{
     // $_SESSION['errorconnection']=array("You have entered an invalid username or password, please try again.");
