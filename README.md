@@ -7,7 +7,7 @@ Team challenge: **4**
 # **Welcome to our Getflix streaming plateform project.**  
   
 
-| ++ | + | The Team | + | ++ |
+| + | + | The Team | + | + |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Noémie | Louis | - | Soufiane | Eugenie | 
 
@@ -17,7 +17,7 @@ Ce projet à pour but de tester nos nouvelles connaissance en php et mysql ainsi
 
 le challenge consiste à creer une plateforme de streaming contenant des bandes annonces.
 
-Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
+Lien du repo initial : [ICI](https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/06-PHP/getflix_project.md).
 
 ## Languages Utilisés
 
