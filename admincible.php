@@ -1,5 +1,6 @@
 <?php
 include 'connectiondatabase.php';
+include 'sessionstart.php';
 
 //Upload l'image
 if (isset($_FILES['thumbnail']) AND $_FILES['thumbnail']['error'] == 0)
@@ -15,7 +16,7 @@ if (isset($_FILES['thumbnail']) AND $_FILES['thumbnail']['error'] == 0)
 if(isset($_POST['title'],$_POST['thumbnailname'],$_POST['preview'],$_POST['category'],$_POST['movies'],$_POST['adult'])){
     $title=htmlspecialchars($_POST['title']);
     $thumbnailname="<img src=\"thumbnail/" . htmlspecialchars($_POST['thumbnailname']) . ".jpg\" alt=\"" . htmlspecialchars($_POST['thumbnailname']) . "\">";
-    $preview="<iframe width=\"715\" height=\"402\" src=\"" . htmlspecialchars($_POST['preview']) . "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+    $preview="<iframe src=\"" . $_POST['preview'] . "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
     $category=htmlspecialchars($_POST['category']);
     $movies=htmlspecialchars($_POST['movies']);
     $adult=htmlspecialchars($_POST['adult']);
@@ -30,7 +31,6 @@ if(isset($_POST['title'],$_POST['thumbnailname'],$_POST['preview'],$_POST['categ
         'adult' => $adult,
     ));
     $_SESSION['confirmAdd']=array("The video has been added to the database.");
-    echo $title, $thumbnailname, $preview, $category, $movies, $adult;
     header('Location:admin.php');
 }
 

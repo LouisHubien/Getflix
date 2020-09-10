@@ -35,7 +35,7 @@ include 'sessionstart.php';
             <div class="col-8 offset-1">
                 <h2> Add a video</h2>
                 <!-- Message de confirmation-->
-                <p class="text-white">
+                <p class="text-white font-italic">
                 <?php
                 include 'connectiondatabase.php';
                 if(isset($_SESSION['confirmAdd'])){

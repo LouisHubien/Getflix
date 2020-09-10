@@ -38,7 +38,7 @@ include 'sessionstart.php';
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 iframecontainer">
+                <div class="col-12 iframecontainer embed-responsive embed-responsive-16by9">
                 <?php
                 include 'connectiondatabase.php';
                     if(isset($_GET['titre'])){
@@ -92,10 +92,11 @@ include 'sessionstart.php';
         </section>
 
         <!-- Footer -->
+        <section class="footertvshowmovies">
         <?php
         include 'footer.php'
         ?>
- 
+        </section>
     <!-- JS scripts -->
     <?php 
         include 'scriptinclude.php';
