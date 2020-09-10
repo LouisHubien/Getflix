@@ -77,11 +77,9 @@ include 'sessionstart.php';
         </section>
 
         <!-- Footer -->
-        <section class="footertvshowmovies">
         <?php
-        // include 'footer.php'
+        // include 'footer.php';
         ?>
-        </section>
     <!-- JS scripts -->
     <?php 
         include 'scriptinclude.php';
