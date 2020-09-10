@@ -58,37 +58,21 @@ include 'sessionstart.php';
                     <h2 class="font">Commentaires</h2>                    
                 </div>
             </div>
-            <div class="row ml-12">
-                <div class="col-12">           
+                <div class="row">
+                    <div class="col-12">     
                     <?php
-                    /* ------------------------COMMENT  SECTION ----------------------- */
-                    include 'connectiondatabase.php';
-                    $title=$_GET['titre'];
-                    $req = $bdd->prepare('SELECT * FROM comments WHERE videoId=:videoId');
-                    $req->execute(array('videoId' => $videoId));
-                    while ($donnees = $req->fetch()) 
-                    {
-                        echo "<p>" . $donnees ['Username'] . " : " . $donnees ['Comment'] . "</br><a href=\"videocible.php?commentId=" . $donnees['ID'] . "&amp;titre=" . $title . "\"><i class=\"fas fa-times\" style=\"font-size: 1.3em;color:#C76B16\"></i></a></p>";
-                    }
-                    $req->closeCursor();
+                    include 'videocible.php';
                     ?>
-                    <form method="post">
-                        <label for="comment">Comment :</label>
-                        <textarea class="form-control col-8 mb-1" id="comment" name="comment" rows="3" placeholder="Enter your comment here." required></textarea>
-                        <input type="submit" value="Comment" class="btn buttoncomment">
-                    </form>
-                    <?php
-                    if (isset($_POST['comment'])){
-                        $req = $bdd->prepare('INSERT INTO comments (Comment, Username, videoId) VALUES (:content, :Username, :videoId)');
-                        $req->execute(array(
-                            'content' => $_POST['comment'],
-                            'Username' => $_SESSION['username'],
-                            'videoId' => $videoId,
-                        ));
-                        header('Location:video.php?titre=' . $title);
-                        $req->closeCursor();
-                    }
-                    ?>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <form method="post">
+                            <label for="comment">Comment :</label>
+                            <textarea class="form-control col-8 mb-1" id="comment" name="comment" rows="3" placeholder="Enter your comment here." required></textarea>
+                            <input type="submit" value="Comment" class="btn buttoncomment">
+                        </form>
+                    </div>
                 </div>
         </section>
 
