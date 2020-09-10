@@ -32,31 +32,115 @@ include 'sessionstart.php';
             </div>
         </div>
         <div class='row mt-5'>
-            <div class="col-8 col-md-6 col-lg-4 offset-md-1">
-                <h2> Manage the videos</h2>
-                <?php
-                include 'connectiondatabase.php';
-                $reponse = $bdd->query('SELECT * FROM entities');
-                while ($donnees = $reponse->fetch())
-                {
-                    if($donnees['movies']==1 AND $donnees['adult']==1){
-                    echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] . "Type : movies Categorie : adult </a></br>";
-                    
-                }elseif($donnees['movies']==1 AND $donnees['adult']==0){
-                    echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] . "Type : movies Categorie : kid </a></br>";
-                }elseif($donnees['movies']==0 AND $donnees['adult']==1){
-                    echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] . "Type : TV-Show Categorie : adult </a></br>";
-                }else{
-                    echo "<a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] . "Type : TV-Show Categorie : kid </a></br>";
-                }
-                }$reponse->closeCursor();
-                ?>
+            <div class="col-8 offset-1">
+                <h2> Add a video</h2>
+                <form>
+
+                </form>
             </div>
         </div>
         <div class='row mt-5'>
-            <div class="col-8 col-md-6 col-lg-4 offset-md-1">
-                <h2> Manage the users</h2>
-
+            <div class="col-8 offset-1">
+                <h2> Delete a video</h2>
+                <table style="width:100%" class="table text-white">
+                <thead class="thead-light">
+                <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Type</th>
+                <th scope="col">Categorie</th>
+                <th scope="col">Operation</th>
+                </tr>
+                </thead>
+                <?php
+                include 'connectiondatabase.php';
+                $reponse = $bdd->query('SELECT * FROM entities ORDER BY Name');
+                while ($donnees = $reponse->fetch())
+                {
+                    if($donnees['movies']==1 AND $donnees['adult']==1){
+                    echo "<tr>
+                    <td scope=\"row\"><a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] ."</a></td>
+                    <td>Movie</td>
+                    <td>Adult</td>
+                    <td><a href=\"admincible.php?titre=" . $donnees['Name'] . "\">Delete</a></td>
+                    </tr>" ;
+                    
+                }elseif($donnees['movies']==1 AND $donnees['adult']==0){
+                    echo "<tr>
+                    <td scope=\"row\"><a href=\"video.php?titre=" . $donnees['Name'] . "\">" . $donnees['Name'] ."</a></td>
+                    <td>Movie</td>
+                    <td>Kid</td>
+                    <td><a href=\"admincible.php?titre=" . $donnees['Name'] . "\">Delete</a></td>
+                    </tr>" ;
+                }elseif($donnees['movies']==0 AND $donnees['adult']==1){
+                    echo "<tr>
+                    <td scope=\"row\"><a href=\"video.php?titre=" . $donnees['Name'] . "\">". $donnees['Name'] ."</a></td>
+                    <td>TV-Show</td>
+                    <td>Adult</td>
+                    <td><a href=\"admincible.php?titre=" . $donnees['Name'] . "\">Delete</a></td>
+                    </tr>" ;
+                }else{
+                    echo "<tr>
+                    <td scope=\"row\"><a href=\"video.php?titre=" . $donnees['Name'] . "\">". $donnees['Name'] ."</a></td>
+                    <td>TV-Show</td>
+                    <td>Kid</td>
+                    <td><a href=\"admincible.php?titre=" . $donnees['Name'] . "\">Delete</a></td>
+                    </tr>" ;
+                }
+                }$reponse->closeCursor();
+                ?>
+                </table>
+            </div>
+        </div>
+        <div class='row mt-5'>
+        <div class="col-8 offset-1">
+                <h2> Manage the Users</h2>
+                <table style="width:100%" class="table text-white">
+                <thead class="thead-light">
+                <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Account</th>
+                <th scope="col">Rights</th>
+                <th scope="col">Operation</th>
+                </tr>
+                </thead>
+                <?php
+                include 'connectiondatabase.php';
+                $reponse = $bdd->query('SELECT * FROM users ORDER BY Username');
+                while ($donnees = $reponse->fetch())
+                {
+                    if($donnees['Adult']==1 AND $donnees['Admin']==0 ){
+                    echo "<tr>
+                    <td scope=\"row\">" . $donnees['Username'] ."</td>
+                    <td>Adult</td>
+                    <td>none</td>
+                    <td><a href=\"admincible.php?user=" . $donnees['Username'] . "\">Delete</a></td>
+                    </tr>" ;
+                    
+                }elseif($donnees['Adult']==0 AND $donnees['Admin']==0){
+                    echo "<tr>
+                    <td scope=\"row\">" . $donnees['Username'] ."</td>
+                    <td>Kid</td>
+                    <td>none</td>
+                    <td><a href=\"admincible.php?user=" . $donnees['Username'] . "\">Delete</a></td>
+                    </tr>" ;
+                }elseif($donnees['Adult']==1 AND $donnees['Admin']==1){
+                    echo "<tr>
+                    <td scope=\"row\">" . $donnees['Username'] ."</td>
+                    <td>Adult</td>
+                    <td>Admin</td>
+                    <td><a href=\"admincible.php?user=" . $donnees['Username'] . "\">Delete</a></td>
+                    </tr>" ;
+                }else{
+                    echo "<tr>
+                    <td scope=\"row\">" . $donnees['Username'] ."</td>
+                    <td>Kid</td>
+                    <td>Admin</td>
+                    <td><a href=\"admincible.php?user=" . $donnees['Username'] . "\">Delete</a></td>
+                    </tr>" ;
+                }
+                }$reponse->closeCursor();
+                ?>
+                </table>
             </div>
         </div>
         <!-- FOOTER -->
