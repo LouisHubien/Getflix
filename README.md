@@ -13,9 +13,9 @@ Team challenge: **4**
 
 ## Introduction
 
-Ce projet à pour but de tester nos nouvelles connaissance en php et mysql ainsi que revoir les bases tels que bootstrap 4 ,CSS et Javascript.
+Ce projet a pour but de tester nos nouvelles connaissances en PHP et Mysql ainsi que de revoir les bases telles que Bootstrap 4 ,CSS et Javascript.
 
-le challenge consiste à creer une plateforme de streaming contenant des bandes annonces.
+Le challenge consiste à créer une plateforme de streaming contenant des bandes annonces.
 
 Lien du repo initial : [ICI](https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/06-PHP/getflix_project.md).
 
@@ -25,13 +25,13 @@ Lien du repo initial : [ICI](https://github.com/becodeorg/BXL-Swartz-3-21/blob/m
 * CSS3
 * PHP,Mysql
 * JS
-* Bootstrap4
+* Bootstrap 4
 
-## Avancé du projet
+## Avancée du projet
 
-* 24/08/2020 : création d'une maquette via Figma,recherche d'un hébergeur pour PHP,recherche sur la mise en place du système de session ,Mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée .
-* 25/08/2020 : création de la première page du formulaire, recherche sur authentification et système de session et partage de database.
-* 26/08/2020 : creation des form d'enregistrement et d'oubli de mot de passe, creation de la home page, session register & lien avec le frontend.
+* 24/08/2020 : création d'une maquette via Figma, recherche d'un hébergeur, recherche sur la mise en place du système de session , mise en place d'un trello et recherche sur la mise en place de la méthode de filtrage la plus adaptée.
+* 25/08/2020 : création de la première page du formulaire, recherche sur l'authentification et le système de session et partage de la database.
+* 26/08/2020 : création des forms d'enregistrements et d'oublis de mot de passe, création de la home page, session register & lien avec le frontend.
 *
 *
 *
