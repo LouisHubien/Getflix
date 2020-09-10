@@ -55,7 +55,7 @@ include 'sessionstart.php';
             </div>
             <div class="row mt-5">
                 <div class="col-12">
-                    <h2 class="font">Commentaires</h2>                    
+                    <h2 class="font">Comments</h2>                    
                 </div>
             </div>
                 <div class="row">
