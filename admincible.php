@@ -32,6 +32,7 @@ if(isset($_POST['title'],$_POST['thumbnailname'],$_POST['preview'],$_POST['categ
     ));
     $_SESSION['confirmAdd']=array("The video has been added to the database.");
     header('Location:admin.php');
+    $req->closeCursor();
 }
 
 //Efface une entities
@@ -42,6 +43,7 @@ $req->execute(array(
 	'name' => $title,
 	));
 header('Location:admin.php');
+$req->closeCursor();
 };
 
 //Efface un user
@@ -52,5 +54,6 @@ if(isset($_GET['user'])){
 	'user' => $user,
 	));
     header('Location:admin.php');
+    $req->closeCursor();
     };
 ?>

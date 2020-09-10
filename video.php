@@ -33,6 +33,7 @@ include 'sessionstart.php';
                     include 'connectiondatabase.php';
                     if(isset($_GET['titre'])){
                         echo '<h1 class="fontfamily">'. $_GET['titre'] . '</h1>';
+                        $req->closeCursor();
                     }
                     ?>
                 </div>
@@ -67,7 +68,7 @@ include 'sessionstart.php';
                     $req->execute(array('videoId' => $videoId));
                     while ($donnees = $req->fetch()) 
                     {
-                        echo '<p>' . $donnees ['Username'] . ' : ' . $donnees ['Comment'] . '</p>';
+                        echo "<p>" . $donnees ['Username'] . " : " . $donnees ['Comment'] . "</br><a href=\"videocible.php?commentId=" . $donnees['ID'] . "&amp;titre=" . $title . "\"><i class=\"fas fa-times\" style=\"font-size: 1.3em;color:#C76B16\"></i></a></p>";
                     }
                     $req->closeCursor();
                     ?>
@@ -94,7 +95,7 @@ include 'sessionstart.php';
         <!-- Footer -->
         <section class="footertvshowmovies">
         <?php
-        include 'footer.php'
+        // include 'footer.php'
         ?>
         </section>
     <!-- JS scripts -->
