@@ -41,6 +41,7 @@ Lien du repo initial:[ICI](https://github.com/becodeorg/BXL-Swartz-3-21).
 * 01/08/2020 : avancement sur la recherche du système de reset de mot de passe, composition de la search bar et mise en place d'un multiple item carousel via php.
 * 02/08/2020 : (Jour de présentiel) correction de bug sur l'implémentation des tokens dans la database, mise en place d'un multiple item carousel via php.
 * 03/09/2020 : hébergement du site + adaptation du multiple item carousel en mono item carousel.
+* 07/09/2020 to 10/09/2020: recherche pour l'implémentation de l'api ,crud commentaire et crud admin.
 ## Screenshots de l'évolution du projet
 
 ![](assets/Figma.JPG)
