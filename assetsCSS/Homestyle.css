@@ -152,6 +152,11 @@ footer{
     width: 100%;
 } 
 
+.deletebutton{
+    color:white;
+    background-color:#c76c16 ;
+
+}
 .responsive-iframe {
     position: absolute;
     top: 0;
