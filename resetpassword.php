@@ -61,7 +61,7 @@ if(isset($_POST['email'])) {
         $mail->Port       = 465;
 
         //Recipients
-        $mail->setFrom('blurflix.becode@gmail.com', 'Mailer');
+        $mail->setFrom('blurflix.becode@gmail.com', 'Blurflix');
         $mail->addAddress($email);
 
         // Content
