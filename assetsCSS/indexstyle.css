@@ -15,7 +15,7 @@ html,body{
 
 h1{
     color: #C76B16;
-    font-size : 800%;
+    font-size : 700%;
     margin-top : 1%;
     font-family: 'lane_-_narrowregular';
 }
@@ -30,10 +30,9 @@ body{
 /* style du formulaire */
 .form-container{
     background-color: rgb(26,25,31,0.7);
-    padding: 30px;
-    margin:0;
-    margin-top : 20%;
-    margin-bottom : 20%;
+    padding:30px;
+    margin-top : 10%;
+    margin-bottom : 10%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #000000;
     width: 400px;
@@ -80,8 +79,5 @@ footer{
 .paddingfix{
     padding : 0;
 }
-
-
-
 
 

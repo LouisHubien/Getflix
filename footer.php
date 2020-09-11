@@ -1,5 +1,4 @@
-<!-- FOOTER -->
-<footer class="container-fluid>
+<footer class="container-fluid">
         <div class="row">
             <div class="col-12 text-center text-white">
                 <p class="font-italic">"Only our name is <span class="wordfooter">blur</span>ry"</p>
