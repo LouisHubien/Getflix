@@ -67,7 +67,7 @@ if(isset($_POST['email'])) {
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = 'Reset password Blurflix';
-        $mail->Body    = 'You can reset your password with the link there <a href="http://getflix/'.$linkToSend.'">'. $linkToSend.'</a>';
+        $mail->Body    = 'You can reset your password with the link there <a href="http://blurflix.rf.gd/'.$linkToSend.'">'. $linkToSend.'</a>';
 
         $mail->send();
         echo 'Message has been sent';

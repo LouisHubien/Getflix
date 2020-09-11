@@ -18,7 +18,9 @@ include 'sessionstart.php';
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assetsCSS/Homestyle.css">
     <script src="https://kit.fontawesome.com/11651444b5.js" crossorigin="anonymous"></script>
-    <title>Blurflix-Home</title>
+     <!-- Favicon -->
+     <link rel="icon" type="image/png" href="/assets/favicon.png" />
+     <title>Blurflix-Home</title>
 </head>
 
 <body>
