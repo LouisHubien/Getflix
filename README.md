@@ -43,4 +43,4 @@ Lien du repo initial : [ICI](https://github.com/becodeorg/BXL-Swartz-3-21/blob/m
 
 ![](assets/Figma.JPG)
 
-Lien de la présentation : https://docs.google.com/presentation/d/1RZG1hzD5eDtV9ZdhILReNuJjkUYgmAeCpiWqypTZLo0/edit#slide=id.g968b95bb0e_3_0
+Lien de la présentation : https://docs.google.com/presentation/d/1RZG1hzD5eDtV9ZdhILReNuJjkUYgmAeCpiWqypTZLo0/edit?usp=sharing
