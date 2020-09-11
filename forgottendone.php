@@ -25,7 +25,7 @@
       
       <section class="row page">
         <div class="col-12">
-        <p class="text-center text-white bg-dark">An email has been sent to your email adress to reset your password !</p>
+        <p class="text-center text-white bg-dark">An email has been sent to your email adress to reset your password ! Don't forget to check your spam folder !</p>
         </div>
     </section>
     <!-- FOOTER -->
