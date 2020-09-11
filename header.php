@@ -2,7 +2,7 @@
     <span class="navbar-brand blurflixnavbar ml-2"> Blurflix</span>
     <!-- Navbar que sur les grands écrans -->
     <ul class="navbar-nav">
-        <li class="nav-item d-none d-md-block"><a class="nav-link" href="Home.php">Home</a></li>
+        <li class="nav-item d-none d-md-block"><a class="nav-link" href="home.php">Home</a></li>
         <li class="nav-item d-none d-md-block"><a class="nav-link" href="movies.php">Movies</a></li>
         <li class="nav-item d-none d-md-block"><a class="nav-link" href="tvshows.php">TV-Shows</a></li>
         <!-- Dropdown ne se montre que sur les petits écrans -->
@@ -11,7 +11,7 @@
           Navigate
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item text-dark" href="Home.php">Home</a>
+          <a class="dropdown-item text-dark" href="home.php">Home</a>
           <a class="dropdown-item text-dark" href="movies.php">Movies</a>
           <a class="dropdown-item text-dark" href="tvshows.php">TV-Shows</a>
         </div>
