@@ -4,6 +4,8 @@ Type of challenge: **Team work**
 Duration : **10 days**  
 Team challenge: **4**  
 
+# BLURFLIX (http://blurflix.rf.gd) or (http://blurflix.ga)
+
 # **Welcome to our Getflix streaming plateform project.**  
   
 
